@@ -163,6 +163,7 @@ if ( ! empty( $_POST['action'] ) && in_array( $_POST['action'], $core_actions_po
 	add_action( 'wp_ajax_' . $_POST['action'], 'wp_ajax_' . str_replace( '-', '_', $_POST['action'] ), 1 );
 }
 
+add_action( 'wp_ajax_nopriv_htajax','so_wp_ajax_function');
 add_action( "wp_ajax_htajax", "so_wp_ajax_function" );
 function so_wp_ajax_function(){
   	$vid=$_POST['vid'];
