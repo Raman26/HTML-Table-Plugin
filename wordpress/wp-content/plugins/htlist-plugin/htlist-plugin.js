@@ -1,11 +1,4 @@
-(function($){ 
-
-
-    $('.hi').on('click',function(){
-        alert('hi');
-    });
-
-   
+(function($){   
 
     $(document).ready(function(){
         $(".he").click(function(){
