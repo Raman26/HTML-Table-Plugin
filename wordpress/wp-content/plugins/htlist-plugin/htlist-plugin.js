@@ -4,6 +4,9 @@
         $(".he").click(function(){
             var vid=$(this).attr("id");
             //alert(vid);
+            $('html, body').animate({
+              scrollTop: $("#ress").offset().top
+            }, 2000);
             $.ajax({
                 url: ajax_object.ajaxurl, // this is the object instantiated in wp_localize_script function
                 type: 'POST',
